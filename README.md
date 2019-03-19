@@ -20,7 +20,7 @@ pod 'VIPER'
 ### Carthage
 
 ```
-github "CoreKit/VIPER" "1.0.0"
+github "CoreKit/VIPER" "1.0.1"
 ```
 
 
