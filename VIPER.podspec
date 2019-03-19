@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'VIPER'
-    s.version          = '1.0.0'
+    s.version          = '1.0.1'
     s.summary          = 'VIPER protocols'
     s.description      = <<-DESC
                             Essential protocols for the VIPER architecture.

@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol Interactor {
+public protocol Interactor {
     
 }

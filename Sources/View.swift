@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol View: class {
+public protocol View: class {
     
 }

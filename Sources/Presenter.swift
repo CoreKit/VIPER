@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol Presenter: class {
+public protocol Presenter: class {
     
 }

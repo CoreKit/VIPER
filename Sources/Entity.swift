@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol Entity {
+public protocol Entity {
     
 }

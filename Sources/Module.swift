@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol Module {
+public protocol Module {
     
 }
