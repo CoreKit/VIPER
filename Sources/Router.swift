@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public protocol Router {
+public protocol Router: class {
     
     var viewController: UIViewController? { get set }
 }
