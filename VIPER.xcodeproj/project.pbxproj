@@ -7,23 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16DEBA6F22414D9800963FD0 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DEBA6622414D9800963FD0 /* View.swift */; };
-		16DEBA7022414D9800963FD0 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DEBA6722414D9800963FD0 /* Entity.swift */; };
-		16DEBA7122414D9800963FD0 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DEBA6822414D9800963FD0 /* Interactor.swift */; };
-		16DEBA7222414D9800963FD0 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DEBA6922414D9800963FD0 /* Presenter.swift */; };
-		16DEBA7322414D9800963FD0 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DEBA6A22414D9800963FD0 /* Router.swift */; };
-		16DEBA7422414D9800963FD0 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DEBA6B22414D9800963FD0 /* Module.swift */; };
+		16DEBA7422414D9800963FD0 /* Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DEBA6B22414D9800963FD0 /* Interfaces.swift */; };
 		16DEBA7522414D9800963FD0 /* VIPER.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DEBA6D22414D9800963FD0 /* VIPER.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16DEBA4C22414C2400963FD0 /* VIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		16DEBA6622414D9800963FD0 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		16DEBA6722414D9800963FD0 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
-		16DEBA6822414D9800963FD0 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
-		16DEBA6922414D9800963FD0 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		16DEBA6A22414D9800963FD0 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		16DEBA6B22414D9800963FD0 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		16DEBA6B22414D9800963FD0 /* Interfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interfaces.swift; sourceTree = "<group>"; };
 		16DEBA6D22414D9800963FD0 /* VIPER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPER.h; sourceTree = "<group>"; };
 		16DEBA6E22414D9800963FD0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,6 +29,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16C6EB53228D8C10001BD18F /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				16DEBA6B22414D9800963FD0 /* Interfaces.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
 		16DEBA4222414C2400963FD0 = {
 			isa = PBXGroup;
 			children = (
@@ -59,12 +57,7 @@
 		16DEBA6522414D9800963FD0 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				16DEBA6622414D9800963FD0 /* View.swift */,
-				16DEBA6722414D9800963FD0 /* Entity.swift */,
-				16DEBA6822414D9800963FD0 /* Interactor.swift */,
-				16DEBA6922414D9800963FD0 /* Presenter.swift */,
-				16DEBA6A22414D9800963FD0 /* Router.swift */,
-				16DEBA6B22414D9800963FD0 /* Module.swift */,
+				16C6EB53228D8C10001BD18F /* VIPER */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -121,7 +114,7 @@
 				TargetAttributes = {
 					16DEBA4B22414C2400963FD0 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -131,6 +124,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 16DEBA4222414C2400963FD0;
 			productRefGroup = 16DEBA4D22414C2400963FD0 /* Products */;
@@ -157,12 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16DEBA7122414D9800963FD0 /* Interactor.swift in Sources */,
-				16DEBA7022414D9800963FD0 /* Entity.swift in Sources */,
-				16DEBA7322414D9800963FD0 /* Router.swift in Sources */,
-				16DEBA7222414D9800963FD0 /* Presenter.swift in Sources */,
-				16DEBA6F22414D9800963FD0 /* View.swift in Sources */,
-				16DEBA7422414D9800963FD0 /* Module.swift in Sources */,
+				16DEBA7422414D9800963FD0 /* Interfaces.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +302,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -339,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiborbodecs.VIPER;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

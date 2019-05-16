@@ -1,27 +1,36 @@
-# VIPER protocols
+# VIPER interfaces
 
-Essential protocols for the VIPER architecture.
+Essential interfaces (protocols) for the VIPER architecture.
 
 
 
 ## Installation
 
+### SPM
+
+```
+.package(url: "https://github.com/CoreKit/VIPER", from: "2.0.0"),
+```
 
 
 ### CocoaPods
 
 ```
 source 'https://github.com/CoreKit/VIPER.git'
-pod 'VIPER'
+pod 'VIPER', '~> 2.0.0'
 ```
-
-
 
 ### Carthage
 
 ```
-github "CoreKit/VIPER" "1.0.2"
+github "CoreKit/VIPER" "2.0.0"
 ```
+
+
+
+## Code generation
+
+[VIPERA](https://github.com/corekit/vipera) - The most simple VIPER module generator for Swift projects.
 
 
 
