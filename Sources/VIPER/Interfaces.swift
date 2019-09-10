@@ -66,14 +66,14 @@ public protocol GenericRouterInterface: RouterInterface &
                                         RouterPresenterInterface {
     associatedtype PresenterRouter
     
-    var presenter: PresenterRouter? { get set }
+    var presenter: PresenterRouter! { get set }
 }
 
 public protocol GenericInteractorInterface: InteractorInterface &
                                             InteractorPresenterInterface {
     associatedtype PresenterInteractor
     
-    var presenter: PresenterInteractor? { get set }
+    var presenter: PresenterInteractor! { get set }
 }
 
 public protocol GenericPresenterInterface: PresenterInterface &
@@ -85,16 +85,16 @@ public protocol GenericPresenterInterface: PresenterInterface &
     associatedtype InteractorPresenter
     associatedtype ViewPresenter
     
-    var router: RouterPresenter? { get set }
-    var interactor: InteractorPresenter? { get set }
-    var view: ViewPresenter? { get set }
+    var router: RouterPresenter! { get set }
+    var interactor: InteractorPresenter! { get set }
+    var view: ViewPresenter! { get set }
 }
 
 public protocol GenericViewInterface: ViewInterface &
                                       ViewPresenterInterface {
     associatedtype PresenterView
     
-    var presenter: PresenterView? { get set }
+    var presenter: PresenterView! { get set }
 }
 
 
@@ -109,6 +109,11 @@ public protocol GenericModuleInterface: ModuleInterface {
 
 public extension GenericModuleInterface {
 
+    /**
+        Composes the VIPER module
+     
+        This method will set all the required pointers
+     */
     func compose(view: View, presenter: Presenter, router: Router, interactor: Interactor) {
         view.presenter = (presenter as! Self.View.PresenterView)
         
