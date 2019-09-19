@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
     s.name             = 'VIPER'
-    s.version          = '2.0.0'
+    s.version          = '3.0.0'
     s.summary          = 'VIPER interfaces'
     s.description      = <<-DESC
-                            Essential interfaces (protocols) for the VIPER architecture.
+                            Generic interfaces (protocols) for the VIPER architecture.
                        DESC
 
     s.homepage         = 'https://theswiftdev.com/'
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/CoreKit/VIPER.git', :tag => s.version.to_s }
     s.social_media_url = 'https://twitter.com/tiborbodecs'
 
-    s.ios.deployment_target = '9.0'
+    s.ios.deployment_target = '12.0'
 
     s.swift_version = '5.0'
     s.source_files = 'Sources/**/*'

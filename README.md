@@ -1,15 +1,15 @@
 # VIPER interfaces
 
-Essential interfaces (protocols) for the VIPER architecture.
+Generic interfaces (protocols) for the VIPER architecture.
 
 
 
 ## Installation
 
-### SPM
+### Swift Package Manager
 
 ```
-.package(url: "https://github.com/CoreKit/VIPER", from: "2.0.0"),
+.package(url: "https://github.com/CoreKit/VIPER", from: "3.0.0"),
 ```
 
 
@@ -17,13 +17,13 @@ Essential interfaces (protocols) for the VIPER architecture.
 
 ```
 source 'https://github.com/CoreKit/VIPER.git'
-pod 'VIPER', '~> 2.0.0'
+pod 'VIPER', '~> 3.0.0'
 ```
 
 ### Carthage
 
 ```
-github "CoreKit/VIPER" "2.0.0"
+github "CoreKit/VIPER" "3.0.0"
 ```
 
 
