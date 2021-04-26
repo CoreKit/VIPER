@@ -10,27 +10,27 @@ import Foundation
 
 // MARK: - interfaces
 
-public protocol RouterPresenterInterface: class {
+public protocol RouterPresenterInterface: AnyObject {
     
 }
 
-public protocol InteractorPresenterInterface: class {
+public protocol InteractorPresenterInterface: AnyObject {
     
 }
 
-public protocol PresenterRouterInterface: class {
+public protocol PresenterRouterInterface: AnyObject {
     
 }
 
-public protocol PresenterInteractorInterface: class {
+public protocol PresenterInteractorInterface: AnyObject {
     
 }
 
-public protocol PresenterViewInterface: class {
+public protocol PresenterViewInterface: AnyObject {
     
 }
 
-public protocol ViewPresenterInterface: class {
+public protocol ViewPresenterInterface: AnyObject {
     
 }
 
